@@ -1,0 +1,256 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    margin: 3rem;
+    width: 50%;
+    min-width: 330px;
+    max-width: 580px;
+}
+
+#ppImgContainer {
+    height: 300px;
+    background-image: url('picture/pinPongPicture.jpg');
+    background-size: cover;
+    background-position: 0% 100%;
+}
+
+#plyTo {
+    font-size: 20px;
+    padding: 0.5rem 0.8rem;
+}
+
+#p1Btn:enabled {
+    height: 60px;
+    border-radius: 0.5em 0 0 0;
+    background-color: rgb(250, 95, 95);
+}
+
+#p1Btn:hover:enabled {
+    background-color: rgb(255, 66, 66);
+}
+
+#p1Btn:active:enabled {
+    background-color: rgb(253, 200, 200);
+    color: rgb(250, 95, 95);
+}
+
+#p1Btn:disabled {
+    height: 60px;
+    border-radius: 0.5em 0 0 0;
+    background-color: rgb(253, 200, 200);
+    color: rgb(250, 95, 95);
+}
+
+#p1mBtn:enabled {
+    border-radius: 0 0 0 0.5em;
+    background-color: rgb(250, 95, 95);
+    color: rgb(255, 208, 208);
+    height: 30px;
+    border-top: 1px solid rgb(255, 208, 208);
+}
+
+#p1mBtn:hover:enabled {
+    background-color: rgb(255, 66, 66);
+}
+
+#p1mBtn:active:enabled {
+    background-color: rgb(253, 200, 200);
+    color: rgb(250, 95, 95);
+}
+
+#p1mBtn:disabled {
+    border-radius: 0 0 0 0.5em;
+    background-color: rgb(253, 200, 200);
+    color: rgb(250, 95, 95);
+    height: 30px;
+    border-top: 1px solid rgb(255, 208, 208);
+}
+
+#p2Btn:enabled {
+    height: 60px;
+    border-radius: 0 0 0 0;
+    background-color: rgb(93, 170, 86);
+}
+
+#p2Btn:hover:enabled {
+    background-color: rgb(60, 161, 50);
+}
+
+#p2Btn:active:enabled {
+    background-color: rgb(222, 255, 219);
+    color: rgb(157, 218, 152);
+}
+
+#p2Btn:disabled {
+    height: 60px;
+    border-radius: 0 0 0 0;
+    background-color: rgb(222, 255, 219);
+    color: rgb(157, 218, 152);
+}
+
+#p2mBtn:enabled {
+    border-radius: 0 0 0 0;
+    background-color: rgb(93, 170, 86);
+    color: rgb(222, 255, 219);
+    height: 30px;
+    border-top: 1px solid rgb(222, 255, 219);
+}
+
+#p2mBtn:hover:enabled {
+    background-color: rgb(60, 161, 50);
+}
+
+#p2mBtn:active:enabled {
+    background-color: rgb(222, 255, 219);
+    color: rgb(157, 218, 152);
+}
+
+#p2mBtn:disabled {
+    background-color: rgb(222, 255, 219);
+    color: rgb(157, 218, 152);
+    height: 30px;
+    border-top: 1px solid rgb(222, 255, 219);
+}
+
+#rBtn {
+    border-radius: 0 0.5em 0.5em 0;
+    height: 90px;
+    background-color: rgb(231, 177, 61);
+}
+
+#rBtn:hover:enabled {
+    background-color: rgb(224, 158, 14);
+}
+
+#rBtn:active:enabled {
+    background-color: rgb(245, 214, 153);
+    color: rgb(192, 148, 53);
+}
+
+#title {
+    font-weight: 900;
+    padding: 0;
+    margin: 0.5em 0;
+    padding: 0.5rem 0.8rem;
+}
+
+#scoreSelect {
+    margin: 0 1em;
+    border: 1px solid grey;
+    border-radius: 2em;
+    text-align: center;
+    padding: 0.3rem 0.5rem;
+    font-size: 20px;
+}
+
+#scoreSelect:hover {
+    border: 3px solid rgb(121, 121, 121);
+}
+
+.alignTop {
+    align-items: flex-start !important;
+}
+
+.alignStretch {
+    align-items: stretch;
+}
+
+.col-4 {
+    width: calc(100%/3) !important;
+}
+
+.col-6 {
+    width: calc(100%/2) !important;
+}
+
+.col-8 {
+    width: calc(100%/3*2) !important;
+}
+
+.noMg {
+    margin: 0 !important;
+}
+
+.score {
+    font-size: 50px;
+    font-weight: 900;
+    padding: ;
+    margin: 0;
+    padding: 0.5rem 0.8rem;
+}
+
+.paragraph {
+    margin: 0.2em 0;
+    padding: 0.5rem 0.8rem;
+}
+
+.Btn {
+    color: white;
+    border: unset;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.contentBox {
+    display: flex;
+    border: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(236, 236, 236);
+    border-right: 1px solid rgb(236, 236, 236);
+    margin-top: 0.2em 0;
+    padding: 0.1em 0.3em;
+    background-color: rgb(236, 236, 236);
+    flex-wrap: wrap;
+
+}
+
+.flexWrap {
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 0.3em 0;
+}
+
+.justifyContentCenter {
+    justify-content: center;
+}
+
+.justifyContentStart {
+    justify-content: left;
+}
+
+.win {
+    transition: color 200ms ease-in-out;
+    color: rgb(224, 158, 14);
+}
+
+.lose {
+    transition: color 200ms ease-in-out;
+    color: rgb(153, 153, 153);
+}
+
+.winP {
+    display: grid;
+    text-align: center;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0);
+    font-weight: 700;
+}
+
+.winPR {
+    color: rgb(250, 95, 95);
+    transition: all 500ms ease-in-out;
+}
+
+.winPG {
+    color: rgb(60, 161, 50);
+    transition: all 500ms ease-in-out;
+}

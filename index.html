@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ping pong score keeper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <section id="container">
+        <div id="ppImgContainer">
+        </div>
+
+        <div class="contentBox">
+            <p id="title">Ping Pong Score Keeper</p>
+        </div>
+
+        <div class="contentBox justifyContentStart">
+            <div class="row">
+                <p class="score">
+                    <span id="player1Score">0</span>
+                    <span class="">to</span>
+                    <span id="player2Score">0</span>
+                </p>
+            </div>
+            <div class="row">
+                <p class="paragraph">Use the button below to keep score.</p>
+            </div>
+            <div class="row">
+
+                <label for="num" id="plyTo">Playing to</label>
+
+                <select name="num" id="scoreSelect">
+                    <option value="">--scores--</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+
+            </div>
+        </div>
+
+        <div class="row noMg alignStretch">
+            <div class="col-8 row noMg flexWrap alignTop">
+                <button class="col-6 Btn" id="p1Btn">+1 playerOne</button>
+                <button class="col-6 Btn " id="p2Btn">+1 playerTwo</button>
+                <button class="col-6 Btn " id="p1mBtn">-1 playerOne</button>
+                <button class="col-6 Btn " id="p2mBtn">-1 playerTwo</button>
+            </div>
+            <button class="col-4 Btn " id="rBtn">Reset</button>
+        </div>
+
+        <p id="winP" class="winP"></p>
+    </section>
+
+
+    <script src="appRefactory.js"></script>
+</body>
+
+</html>
